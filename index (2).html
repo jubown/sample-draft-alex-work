@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alex Craft</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(to right, #32e0c4, #6fc1ff);
+        color: #333;
+    }
+
+    header {
+        background-color: #fff;
+        color: #008080;
+        padding: 20px;
+        text-align: center;
+        position: relative;
+    }
+
+    header:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #32e0c4;
+        clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
+        z-index: -1;
+    }
+
+    header h1 {
+        margin: 0;
+        font-size: 3em;
+        line-height: 1.2;
+        color: #008080;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    header p {
+        margin: 0;
+        font-size: 1.5em;
+        color: #008080;
+    }
+
+    nav {
+        background-color: rgba(255, 255, 255, 0.8);
+        color: #008080;
+        text-align: center;
+        padding: 10px 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: relative;
+        border-bottom: 1px solid #ddd;
+        animation: slideInFromTop 0.5s ease-out; /* Add animation */
+    }
+
+    @keyframes slideInFromTop {
+        0% {
+            transform: translateY(-100%);
+            opacity: 0;
+        }
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    nav a {
+        color: #008080;
+        text-decoration: none;
+        padding: 10px 20px;
+        margin: 0 5px;
+        border-radius: 5px;
+        background-color: rgba(255, 255, 255, 0.5);
+        transition: background-color 0.3s, color 0.3s; /* Added color transition */
+    }
+
+    nav a:hover {
+        background-color: #008080;
+        color: #fff; /* Change text color on hover */
+    }
+
+    .main-content {
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+        position: relative;
+    }
+
+    .image-container {
+        text-align: center;
+        margin-bottom: 20px;
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+    }
+
+    .image-container img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        position: relative;
+        object-fit: cover;
+    }
+
+    .image-container:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+        z-index: 1;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    .image-container:hover:before {
+        opacity: 1;
+    }
+
+    .image-container p {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        color: #fff;
+        font-size: 18px;
+        z-index: 2;
+    }
+
+    footer {
+        background-color: #fff;
+        color: #008080;
+        text-align: center;
+        padding: 20px 0;
+        position: relative;
+    }
+
+    footer:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #32e0c4;
+        clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
+        z-index: -1;
+    }
+
+    footer p {
+        margin: 0;
+        font-size: 1.2em;
+    }
+</style>
+</head>
+<body>
+<header>
+    <img src="first [ic.png" alt="Logo">
+    <h1>Welcome to Alex Craft</h1>
+    <p>Your ultimate destination for creative projects</p>
+</header>
+<nav>
+    <a href="#alex">ALEX PROFILE</a>
+    <a href="#usana">USANA PROFILE</a>
+    <a href="#tadeo">TADEO PROFILE</a>
+    <a href="#manlapig">MANLAPIG PROFILE</a>
+    <a href="#berroya">BERROYA PROFILE</a>
+    <a href="#deluyas">DELUYAS PROFILE</a>
+    <a href="#ompad">OMPAD PROFILE</a>
+    <a href="#gian">GIAN PROFILE</a>
+</nav>
+<div class="main-content" id="alex">
+    <h2>Alex Profile</h2>
+    <div class="image-container">
+        <img src="Untitled design (2).png" alt="Image 1">
+    </div>
+    <p>This is Alex's profile. Feel free to explore!</p>
+</div>
+<div class="main-content">
+    <h2 id="usana">Usana Profile</h2>
+    <div class="image-container">
+        <img src="Untitled design (2).png" alt="Image 1">
+    </div>
+    <p>This is Usana's profile. Feel free to explore!</p>
+</div>
+<div class="main-content">
+    <h2 id="tadeo">Tadeo Profile</h2>
+    <div class="image-container">
+        <img src="Untitled design (2).png" alt="Image 1">
+    </div>
+    <p>This is Tadeo's profile. Feel free to explore!</p>
+</div>
+<div class="main-content">
+    <h2 id="manlapig">Manlapig Profile</h2>
+    <div class="image-container">
+        <img src="Untitled design (2).png" alt="Image 1">
+    </div>
+    <p>This is Manlapig's profile. Feel free to explore!</p>
+</div>
+<div class="main-content">
+    <h2 id="berroya">Berroya Profile</h2>
+    <div class="image-container">
+        <img src="Untitled design (2).png" alt="Image 1">
+    </div>
+    <p>This is Berroya's profile. Feel free to explore!</p>
+</div>
+<div class="main-content">
+    <h2 id="deluyas">Deluyas Profile</h2>
+    <div class="image-container">
+        <img src="Untitled design (2).png" alt="Image 2">
+    </div>
+    <p>We are a team of passionate individuals dedicated to providing great services.</p>
+</div>
+<div class="main-content">
+    <h2 id="ompad">Ompad Profile</h2>
+    <div class="image-container">
+        <img src="Untitled design (2).png" alt="Image 3">
+    </div>
+    <p>Here are some of the services we offer:</p>
+</div>
+<div class="main-content">
+    <h2 id="gian">Gian Profile</h2>
+    <div class="image-container">
+        <img src="Untitled design (2).png" alt="Image 4">
+    </div>
+    <p>This is Gian's profile. Feel free to explore!</p>
+</div>
+<footer>
+    <p>&copy; 2024 May Work Alex Craft.</p>
+</footer>
+</body>
+</html>
